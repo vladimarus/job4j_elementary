@@ -31,4 +31,22 @@ public class MatrixCheck {
         }
         return rsl;
     }
+
+    public static boolean isWin(char[][] board) {
+        boolean result = false;
+
+        // разворачиваем диагональ в плоскость
+        char[] hrs = extractDiagonal(board);
+        // находим или не находим индекс Х
+        for (int idx = 0; idx < board.length; idx++) {
+            if (hrs[idx] == 'X') {
+                // ищем моно горизонталь или монодиагональ
+                if (monoHorizontal(board, idx) || monoVertical(board, idx)) {
+                    result = true;
+                    break;
+                }
+            }
+        }
+        return result;
+    }
 }
