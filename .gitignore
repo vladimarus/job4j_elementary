@@ -19,3 +19,7 @@ target
 out
 *.log
 /src/ru/job4j/loop/Forever.java
+/src/ru/job4j/array/CheckSumIndexes.java
+/test/ru/job4j/array/CheckSumIndexesTest.java
+/src/ru/job4j/array/Cinema.java
+/test/ru/job4j/array/CinemaTest.java
