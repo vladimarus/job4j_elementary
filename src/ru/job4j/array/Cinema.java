@@ -11,8 +11,7 @@ public class Cinema {
                             && places[row + 1 > places.length - 1 ? row : row + 1][cell] == null
                             && places[row][Math.max(cell - 1, 0)] == null
                             && places[row][cell + 1 > places[row].length - 1 ? cell : cell + 1] == null) {
-                        Place pl = new Place(row, cell);
-                        return pl;
+                        return new Place(row, cell);
                     }
                 }
             }
@@ -22,7 +21,6 @@ public class Cinema {
 
     public static class Place {
         private int row;
-
         private int cell;
 
         public Place(int row, int cell) {

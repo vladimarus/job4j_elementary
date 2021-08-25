@@ -19,6 +19,11 @@ target
 out
 *.log
 /src/ru/job4j/loop/Forever.java
+/src/ru/job4j/condition/PairsCharString.java
+/test/ru/job4j/condition/PairsCharStringTest.java
+/test/ru/job4j/array/TriangleMatrixTest.java
+/src/ru/job4j/array/TriangleMatrix.java
+/src/ru/job4j/array/Transposition.java
 /src/ru/job4j/array/CheckSumIndexes.java
 /test/ru/job4j/array/CheckSumIndexesTest.java
 /src/ru/job4j/array/Cinema.java
