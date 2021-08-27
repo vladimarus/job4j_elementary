@@ -32,4 +32,25 @@ public class MaxTest {
         int actual = Max.max(l, r);
         assertEquals(expect, actual);
     }
+
+    @Test
+    public void when3Max33Then33() {
+        int op1 = 3;
+        int op2 = 33;
+        int op3 = 10;
+        int expect = 33;
+        int actual = Max.max(op1, op2, op3);
+        assertEquals(expect, actual);
+    }
+
+    @Test
+    public void when4Max55Then55() {
+        int op1 = 44;
+        int op2 = 44;
+        int op3 = 55;
+        int op4 = 55;
+        int expect = 55;
+        int actual = Max.max(op1, op2, op3, op4);
+        assertEquals(expect, actual);
+    }
 }
